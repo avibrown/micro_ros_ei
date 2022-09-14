@@ -1,0 +1,2 @@
+Invoking command in '/home/avi/ros2_ws/build/ei_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/avi/ros2_ws/build/ei_interfaces -- -j8 -l8
+Invoked command in '/home/avi/ros2_ws/build/ei_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/avi/ros2_ws/build/ei_interfaces -- -j8 -l8

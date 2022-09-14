@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ei_interfaces/msg/EIClassification.msg
+// generated code does not contain a copyright notice
+
+
+module ei_interfaces {
+  module msg {
+    struct EIClassification {
+      string label;
+
+      float value;
+    };
+  };
+};

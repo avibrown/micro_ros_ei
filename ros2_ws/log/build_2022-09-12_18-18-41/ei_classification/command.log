@@ -1,0 +1,2 @@
+Invoking command in '/home/avi/ros2_ws/build/ei_classification': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/avi/ros2_ws/src/ei_classification -DCMAKE_INSTALL_PREFIX=/home/avi/ros2_ws/install/ei_classification
+Invoked command in '/home/avi/ros2_ws/build/ei_classification' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/avi/ros2_ws/src/ei_classification -DCMAKE_INSTALL_PREFIX=/home/avi/ros2_ws/install/ei_classification

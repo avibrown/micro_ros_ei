@@ -1,0 +1,212 @@
+[0.008s] Invoking command in '/home/avi/ros2_ws/build/ei_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/avi/ros2_ws/ei_interfaces -DCMAKE_INSTALL_PREFIX=/home/avi/ros2_ws/install/ei_interfaces
+[0.014s] -- Found ament_cmake: 1.3.2 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.098s] -- Found ament_lint_auto: 0.12.4 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.137s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.138s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.139s] -- Found rosidl_adapter: 3.1.3 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.156s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.278s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.389s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.528s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.541s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.4", minimum required is "3.6") 
+[0.542s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.557s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.4", minimum required is "3.5") 
+[0.557s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.557s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.557s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[0.570s] -- Found PythonExtra: .so  
+[0.590s] -- Added test 'lint_cmake' to check CMake code style
+[0.590s] -- Added test 'xmllint' to check XML markup files
+[0.593s] -- Configuring done
+[0.605s] -- Generating done
+[0.606s] -- Build files have been written to: /home/avi/ros2_ws/build/ei_interfaces
+[0.611s] Invoked command in '/home/avi/ros2_ws/build/ei_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/avi/ros2_ws/ei_interfaces -DCMAKE_INSTALL_PREFIX=/home/avi/ros2_ws/install/ei_interfaces
+[0.612s] Invoking command in '/home/avi/ros2_ws/build/ei_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/avi/ros2_ws/build/ei_interfaces -- -j8 -l8
+[0.635s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[0.640s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[0.644s] [  6%] Built target ament_cmake_python_copy_ei_interfaces
+[0.786s] running egg_info
+[0.787s] creating ei_interfaces.egg-info
+[0.787s] writing ei_interfaces.egg-info/PKG-INFO
+[0.787s] writing dependency_links to ei_interfaces.egg-info/dependency_links.txt
+[0.787s] writing top-level names to ei_interfaces.egg-info/top_level.txt
+[0.787s] writing manifest file 'ei_interfaces.egg-info/SOURCES.txt'
+[0.789s] reading manifest file 'ei_interfaces.egg-info/SOURCES.txt'
+[0.789s] writing manifest file 'ei_interfaces.egg-info/SOURCES.txt'
+[0.791s] [  6%] Built target ei_interfaces__cpp
+[0.796s] [  9%] [32mBuilding C object CMakeFiles/ei_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ei_interfaces/msg/detail/ei_classification__functions.c.o[0m
+[0.796s] [ 16%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[0.796s] [ 16%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[0.798s] [ 19%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[0.809s] [ 19%] Built target ament_cmake_python_build_ei_interfaces_egg
+[0.837s] [ 22%] [32m[1mLinking C shared library libei_interfaces__rosidl_generator_c.so[0m
+[0.859s] [ 22%] Built target ei_interfaces__rosidl_generator_c
+[0.866s] [ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[0.867s] [ 32%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[0.867s] [ 32%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[0.943s] [ 35%] [32mBuilding CXX object CMakeFiles/ei_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ei_interfaces/msg/ei_classification__type_support.cpp.o[0m
+[1.025s] [ 38%] [32mBuilding CXX object CMakeFiles/ei_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ei_interfaces/msg/detail/ei_classification__type_support.cpp.o[0m
+[1.037s] [ 41%] [32mBuilding CXX object CMakeFiles/ei_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ei_interfaces/msg/detail/ei_classification__type_support_c.cpp.o[0m
+[1.045s] [ 45%] [32mBuilding CXX object CMakeFiles/ei_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ei_interfaces/msg/detail/dds_fastrtps/ei_classification__type_support.cpp.o[0m
+[1.088s] [ 48%] [32mBuilding CXX object CMakeFiles/ei_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ei_interfaces/msg/ei_classification__type_support.cpp.o[0m
+[1.107s] [ 51%] [32m[1mLinking CXX shared library libei_interfaces__rosidl_typesupport_c.so[0m
+[1.128s] [ 54%] [32mBuilding C object CMakeFiles/ei_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ei_interfaces/msg/detail/ei_classification__type_support.c.o[0m
+[1.133s] [ 54%] Built target ei_interfaces__rosidl_typesupport_c
+[1.148s] [ 58%] [32m[1mLinking C shared library libei_interfaces__rosidl_typesupport_introspection_c.so[0m
+[1.164s] [ 58%] Built target ei_interfaces__rosidl_typesupport_introspection_c
+[1.188s] [ 61%] [32m[1mLinking CXX shared library libei_interfaces__rosidl_typesupport_cpp.so[0m
+[1.211s] [ 61%] Built target ei_interfaces__rosidl_typesupport_cpp
+[1.257s] [ 64%] [32m[1mLinking CXX shared library libei_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[1.295s] [ 67%] [32m[1mLinking CXX shared library libei_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[1.300s] [ 67%] Built target ei_interfaces__rosidl_typesupport_fastrtps_c
+[1.331s] [ 67%] Built target ei_interfaces__rosidl_typesupport_introspection_cpp
+[1.337s] [ 70%] [32m[1mLinking CXX shared library libei_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[1.377s] [ 70%] Built target ei_interfaces__rosidl_typesupport_fastrtps_cpp
+[1.387s] [ 70%] Built target ei_interfaces
+[1.397s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[1.609s] [ 74%] Built target ei_interfaces__py
+[1.619s] [ 77%] [32mBuilding C object CMakeFiles/ei_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ei_interfaces/msg/_ei_classification_s.c.o[0m
+[1.688s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/ei_interfaces/libei_interfaces__rosidl_generator_py.so[0m
+[1.712s] [ 80%] Built target ei_interfaces__rosidl_generator_py
+[1.723s] [ 90%] [32mBuilding C object CMakeFiles/ei_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/ei_interfaces/_ei_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[1.723s] [ 90%] [32mBuilding C object CMakeFiles/ei_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/ei_interfaces/_ei_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[1.723s] [ 90%] [32mBuilding C object CMakeFiles/ei_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ei_interfaces/_ei_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[1.776s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/ei_interfaces/ei_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[1.776s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/ei_interfaces/ei_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[1.776s] [100%] [32m[1mLinking C shared library rosidl_generator_py/ei_interfaces/ei_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[1.794s] [100%] Built target ei_interfaces__rosidl_typesupport_introspection_c__pyext
+[1.794s] [100%] Built target ei_interfaces__rosidl_typesupport_c__pyext
+[1.794s] [100%] Built target ei_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[1.799s] Invoked command in '/home/avi/ros2_ws/build/ei_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/avi/ros2_ws/build/ei_interfaces -- -j8 -l8
+[1.831s] Invoking command in '/home/avi/ros2_ws/build/ei_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/avi/ros2_ws/build/ei_interfaces
+[1.836s] -- Install configuration: ""
+[1.836s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/share/ament_index/resource_index/rosidl_interfaces/ei_interfaces
+[1.836s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/include/ei_interfaces/ei_interfaces
+[1.836s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg
+[1.836s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/ei_classification.h
+[1.836s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail
+[1.836s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail/ei_classification__struct.h
+[1.836s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail/ei_classification__type_support.h
+[1.836s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail/ei_classification__functions.h
+[1.836s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail/ei_classification__functions.c
+[1.836s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/rosidl_generator_c__visibility_control.h
+[1.836s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/share/ei_interfaces/environment/library_path.sh
+[1.836s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/share/ei_interfaces/environment/library_path.dsv
+[1.836s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/lib/libei_interfaces__rosidl_generator_c.so
+[1.836s] -- Set runtime path of "/home/avi/ros2_ws/install/ei_interfaces/lib/libei_interfaces__rosidl_generator_c.so" to ""
+[1.836s] -- Up-to-date: /home/avi/ros2_ws/install/ei_interfaces/include/ei_interfaces/ei_interfaces
+[1.836s] -- Up-to-date: /home/avi/ros2_ws/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg
+[1.837s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.837s] -- Up-to-date: /home/avi/ros2_ws/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail
+[1.837s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail/ei_classification__rosidl_typesupport_fastrtps_c.h
+[1.837s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/lib/libei_interfaces__rosidl_typesupport_fastrtps_c.so
+[1.837s] -- Set runtime path of "/home/avi/ros2_ws/install/ei_interfaces/lib/libei_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[1.837s] -- Up-to-date: /home/avi/ros2_ws/install/ei_interfaces/include/ei_interfaces/ei_interfaces
+[1.837s] -- Up-to-date: /home/avi/ros2_ws/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg
+[1.837s] -- Up-to-date: /home/avi/ros2_ws/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail
+[1.837s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail/ei_classification__rosidl_typesupport_introspection_c.h
+[1.837s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail/ei_classification__type_support.c
+[1.837s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.837s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/lib/libei_interfaces__rosidl_typesupport_introspection_c.so
+[1.838s] -- Set runtime path of "/home/avi/ros2_ws/install/ei_interfaces/lib/libei_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[1.838s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/lib/libei_interfaces__rosidl_typesupport_c.so
+[1.838s] -- Set runtime path of "/home/avi/ros2_ws/install/ei_interfaces/lib/libei_interfaces__rosidl_typesupport_c.so" to ""
+[1.838s] -- Up-to-date: /home/avi/ros2_ws/install/ei_interfaces/include/ei_interfaces/ei_interfaces
+[1.838s] -- Up-to-date: /home/avi/ros2_ws/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg
+[1.838s] -- Up-to-date: /home/avi/ros2_ws/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail
+[1.838s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail/ei_classification__struct.hpp
+[1.838s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail/ei_classification__builder.hpp
+[1.838s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail/ei_classification__traits.hpp
+[1.838s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/ei_classification.hpp
+[1.838s] -- Up-to-date: /home/avi/ros2_ws/install/ei_interfaces/include/ei_interfaces/ei_interfaces
+[1.838s] -- Up-to-date: /home/avi/ros2_ws/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg
+[1.838s] -- Up-to-date: /home/avi/ros2_ws/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail
+[1.838s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail/dds_fastrtps
+[1.838s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail/ei_classification__rosidl_typesupport_fastrtps_cpp.hpp
+[1.838s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.838s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/lib/libei_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[1.838s] -- Set runtime path of "/home/avi/ros2_ws/install/ei_interfaces/lib/libei_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[1.839s] -- Up-to-date: /home/avi/ros2_ws/install/ei_interfaces/include/ei_interfaces/ei_interfaces
+[1.839s] -- Up-to-date: /home/avi/ros2_ws/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg
+[1.839s] -- Up-to-date: /home/avi/ros2_ws/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail
+[1.839s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail/ei_classification__rosidl_typesupport_introspection_cpp.hpp
+[1.839s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail/ei_classification__type_support.cpp
+[1.839s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/lib/libei_interfaces__rosidl_typesupport_introspection_cpp.so
+[1.839s] -- Set runtime path of "/home/avi/ros2_ws/install/ei_interfaces/lib/libei_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[1.839s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/lib/libei_interfaces__rosidl_typesupport_cpp.so
+[1.839s] -- Set runtime path of "/home/avi/ros2_ws/install/ei_interfaces/lib/libei_interfaces__rosidl_typesupport_cpp.so" to ""
+[1.839s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/share/ei_interfaces/environment/pythonpath.sh
+[1.839s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/share/ei_interfaces/environment/pythonpath.dsv
+[1.839s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces-0.0.0-py3.10.egg-info
+[1.839s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[1.839s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[1.839s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[1.839s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[1.839s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces
+[1.839s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces/_ei_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[1.840s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces/__init__.py
+[1.840s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces/libei_interfaces__rosidl_generator_py.so
+[1.840s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces/_ei_interfaces_s.ep.rosidl_typesupport_c.c
+[1.840s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces/ei_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.840s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces/ei_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.840s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces/ei_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.840s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces/_ei_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[1.840s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces/msg
+[1.840s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces/msg/__init__.py
+[1.840s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces/msg/_ei_classification.py
+[1.840s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces/msg/_ei_classification_s.c
+[1.860s] Listing '/home/avi/ros2_ws/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces'...
+[1.860s] Compiling '/home/avi/ros2_ws/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces/__init__.py'...
+[1.860s] Listing '/home/avi/ros2_ws/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces/msg'...
+[1.860s] Compiling '/home/avi/ros2_ws/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces/msg/__init__.py'...
+[1.860s] Compiling '/home/avi/ros2_ws/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces/msg/_ei_classification.py'...
+[1.862s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces/ei_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.862s] -- Set runtime path of "/home/avi/ros2_ws/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces/ei_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[1.863s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces/ei_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.863s] -- Set runtime path of "/home/avi/ros2_ws/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces/ei_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[1.863s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces/ei_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.863s] -- Set runtime path of "/home/avi/ros2_ws/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces/ei_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[1.863s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/lib/libei_interfaces__rosidl_generator_py.so
+[1.863s] -- Set runtime path of "/home/avi/ros2_ws/install/ei_interfaces/lib/libei_interfaces__rosidl_generator_py.so" to ""
+[1.863s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/share/ei_interfaces/msg/EIClassification.idl
+[1.863s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/share/ei_interfaces/msg/EIClassification.msg
+[1.864s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/share/ament_index/resource_index/package_run_dependencies/ei_interfaces
+[1.864s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/share/ament_index/resource_index/parent_prefix_path/ei_interfaces
+[1.864s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/share/ei_interfaces/environment/ament_prefix_path.sh
+[1.864s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/share/ei_interfaces/environment/ament_prefix_path.dsv
+[1.864s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/share/ei_interfaces/environment/path.sh
+[1.864s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/share/ei_interfaces/environment/path.dsv
+[1.864s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/share/ei_interfaces/local_setup.bash
+[1.864s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/share/ei_interfaces/local_setup.sh
+[1.864s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/share/ei_interfaces/local_setup.zsh
+[1.864s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/share/ei_interfaces/local_setup.dsv
+[1.864s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/share/ei_interfaces/package.dsv
+[1.864s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/share/ament_index/resource_index/packages/ei_interfaces
+[1.864s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/share/ei_interfaces/cmake/export_ei_interfaces__rosidl_generator_cExport.cmake
+[1.864s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/share/ei_interfaces/cmake/export_ei_interfaces__rosidl_generator_cExport-noconfig.cmake
+[1.864s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/share/ei_interfaces/cmake/export_ei_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[1.865s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/share/ei_interfaces/cmake/export_ei_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[1.865s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/share/ei_interfaces/cmake/ei_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[1.865s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/share/ei_interfaces/cmake/ei_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.865s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/share/ei_interfaces/cmake/ei_interfaces__rosidl_typesupport_cExport.cmake
+[1.865s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/share/ei_interfaces/cmake/ei_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[1.865s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/share/ei_interfaces/cmake/export_ei_interfaces__rosidl_generator_cppExport.cmake
+[1.865s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/share/ei_interfaces/cmake/export_ei_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[1.865s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/share/ei_interfaces/cmake/export_ei_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[1.865s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/share/ei_interfaces/cmake/ei_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[1.865s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/share/ei_interfaces/cmake/ei_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.865s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/share/ei_interfaces/cmake/ei_interfaces__rosidl_typesupport_cppExport.cmake
+[1.865s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/share/ei_interfaces/cmake/ei_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[1.865s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/share/ei_interfaces/cmake/export_ei_interfaces__rosidl_generator_pyExport.cmake
+[1.865s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/share/ei_interfaces/cmake/export_ei_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[1.865s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/share/ei_interfaces/cmake/rosidl_cmake-extras.cmake
+[1.866s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/share/ei_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.866s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/share/ei_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[1.866s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/share/ei_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[1.866s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/share/ei_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.866s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/share/ei_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.866s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/share/ei_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.866s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/share/ei_interfaces/cmake/ei_interfacesConfig.cmake
+[1.866s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/share/ei_interfaces/cmake/ei_interfacesConfig-version.cmake
+[1.866s] -- Installing: /home/avi/ros2_ws/install/ei_interfaces/share/ei_interfaces/package.xml
+[1.868s] Invoked command in '/home/avi/ros2_ws/build/ei_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/avi/ros2_ws/build/ei_interfaces

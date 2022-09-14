@@ -1,0 +1,13 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ei_interfaces/msg/EIResult.msg
+// generated code does not contain a copyright notice
+
+#include "ei_interfaces/msg/EIClassification.idl"
+
+module ei_interfaces {
+  module msg {
+    struct EIResult {
+      sequence<ei_interfaces::msg::EIClassification> result;
+    };
+  };
+};

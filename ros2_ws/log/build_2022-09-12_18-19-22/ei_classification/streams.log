@@ -1,0 +1,219 @@
+[0.008s] Invoking command in '/home/avi/ros2_ws/build/ei_classification': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/avi/ros2_ws/src/ei_classification -DCMAKE_INSTALL_PREFIX=/home/avi/ros2_ws/install/ei_classification
+[0.014s] -- Found ament_cmake: 1.3.2 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.101s] -- Found ament_lint_auto: 0.12.4 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.140s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.141s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.143s] -- Found rosidl_adapter: 3.1.3 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.159s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.287s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.416s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.572s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.587s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.4", minimum required is "3.6") 
+[0.588s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.604s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.4", minimum required is "3.5") 
+[0.604s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.604s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.604s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[0.616s] -- Found PythonExtra: .so  
+[0.644s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.644s] -- Configured cppcheck include dirs: 
+[0.644s] -- Configured cppcheck exclude dirs and/or files: 
+[0.645s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.646s] -- Added test 'lint_cmake' to check CMake code style
+[0.646s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.648s] -- Added test 'uncrustify' to check C / C++ code style
+[0.648s] -- Configured uncrustify additional arguments: 
+[0.649s] -- Added test 'xmllint' to check XML markup files
+[0.652s] -- Configuring done
+[0.666s] -- Generating done
+[0.667s] -- Build files have been written to: /home/avi/ros2_ws/build/ei_classification
+[0.672s] Invoked command in '/home/avi/ros2_ws/build/ei_classification' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/avi/ros2_ws/src/ei_classification -DCMAKE_INSTALL_PREFIX=/home/avi/ros2_ws/install/ei_classification
+[0.672s] Invoking command in '/home/avi/ros2_ws/build/ei_classification': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/avi/ros2_ws/build/ei_classification -- -j8 -l8
+[0.692s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[0.697s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[0.702s] [  6%] Built target ament_cmake_python_copy_ei_classification
+[0.845s] running egg_info
+[0.846s] creating ei_classification.egg-info
+[0.846s] writing ei_classification.egg-info/PKG-INFO
+[0.846s] writing dependency_links to ei_classification.egg-info/dependency_links.txt
+[0.846s] writing top-level names to ei_classification.egg-info/top_level.txt
+[0.846s] writing manifest file 'ei_classification.egg-info/SOURCES.txt'
+[0.848s] reading manifest file 'ei_classification.egg-info/SOURCES.txt'
+[0.848s] writing manifest file 'ei_classification.egg-info/SOURCES.txt'
+[0.849s] [  6%] Built target ei_classification__cpp
+[0.855s] [ 12%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[0.855s] [ 12%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[0.856s] [ 19%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[0.856s] [ 19%] [32mBuilding C object CMakeFiles/ei_classification__rosidl_generator_c.dir/rosidl_generator_c/ei_classification/msg/detail/ei_classification__functions.c.o[0m
+[0.867s] [ 19%] Built target ament_cmake_python_build_ei_classification_egg
+[0.910s] [ 22%] [32m[1mLinking C shared library libei_classification__rosidl_generator_c.so[0m
+[0.932s] [ 22%] Built target ei_classification__rosidl_generator_c
+[0.938s] [ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[0.940s] [ 32%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[0.940s] [ 32%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.024s] [ 35%] [32mBuilding CXX object CMakeFiles/ei_classification__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ei_classification/msg/detail/dds_fastrtps/ei_classification__type_support.cpp.o[0m
+[1.033s] [ 38%] [32mBuilding CXX object CMakeFiles/ei_classification__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ei_classification/msg/detail/ei_classification__type_support.cpp.o[0m
+[1.051s] [ 41%] [32mBuilding CXX object CMakeFiles/ei_classification__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ei_classification/msg/ei_classification__type_support.cpp.o[0m
+[1.142s] [ 45%] [32mBuilding CXX object CMakeFiles/ei_classification__rosidl_typesupport_c.dir/rosidl_typesupport_c/ei_classification/msg/ei_classification__type_support.cpp.o[0m
+[1.162s] [ 48%] [32m[1mLinking CXX shared library libei_classification__rosidl_typesupport_c.so[0m
+[1.187s] [ 48%] Built target ei_classification__rosidl_typesupport_c
+[1.231s] [ 51%] [32mBuilding C object CMakeFiles/ei_classification__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ei_classification/msg/detail/ei_classification__type_support.c.o[0m
+[1.231s] [ 54%] [32mBuilding CXX object CMakeFiles/ei_classification__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ei_classification/msg/detail/ei_classification__type_support_c.cpp.o[0m
+[1.251s] [ 58%] [32m[1mLinking C shared library libei_classification__rosidl_typesupport_introspection_c.so[0m
+[1.268s] [ 58%] Built target ei_classification__rosidl_typesupport_introspection_c
+[1.293s] [ 61%] [32m[1mLinking CXX shared library libei_classification__rosidl_typesupport_introspection_cpp.so[0m
+[1.311s] [ 64%] [32m[1mLinking CXX shared library libei_classification__rosidl_typesupport_cpp.so[0m
+[1.333s] [ 64%] Built target ei_classification__rosidl_typesupport_introspection_cpp
+[1.336s] [ 64%] Built target ei_classification__rosidl_typesupport_cpp
+[1.385s] [ 67%] [32m[1mLinking CXX shared library libei_classification__rosidl_typesupport_fastrtps_cpp.so[0m
+[1.426s] [ 67%] Built target ei_classification__rosidl_typesupport_fastrtps_cpp
+[1.432s] [ 70%] [32m[1mLinking CXX shared library libei_classification__rosidl_typesupport_fastrtps_c.so[0m
+[1.476s] [ 70%] Built target ei_classification__rosidl_typesupport_fastrtps_c
+[1.486s] [ 70%] Built target ei_classification
+[1.497s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[1.709s] [ 74%] Built target ei_classification__py
+[1.719s] [ 77%] [32mBuilding C object CMakeFiles/ei_classification__rosidl_generator_py.dir/rosidl_generator_py/ei_classification/msg/_ei_classification_s.c.o[0m
+[1.787s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/ei_classification/libei_classification__rosidl_generator_py.so[0m
+[1.812s] [ 80%] Built target ei_classification__rosidl_generator_py
+[1.822s] [ 90%] [32mBuilding C object CMakeFiles/ei_classification__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ei_classification/_ei_classification_s.ep.rosidl_typesupport_c.c.o[0m
+[1.822s] [ 90%] [32mBuilding C object CMakeFiles/ei_classification__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/ei_classification/_ei_classification_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[1.822s] [ 90%] [32mBuilding C object CMakeFiles/ei_classification__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/ei_classification/_ei_classification_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[1.875s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/ei_classification/ei_classification_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[1.875s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/ei_classification/ei_classification_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[1.875s] [100%] [32m[1mLinking C shared library rosidl_generator_py/ei_classification/ei_classification_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[1.893s] [100%] Built target ei_classification__rosidl_typesupport_c__pyext
+[1.893s] [100%] Built target ei_classification__rosidl_typesupport_introspection_c__pyext
+[1.893s] [100%] Built target ei_classification__rosidl_typesupport_fastrtps_c__pyext
+[1.899s] Invoked command in '/home/avi/ros2_ws/build/ei_classification' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/avi/ros2_ws/build/ei_classification -- -j8 -l8
+[1.931s] Invoking command in '/home/avi/ros2_ws/build/ei_classification': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/avi/ros2_ws/build/ei_classification
+[1.935s] -- Install configuration: ""
+[1.935s] -- Installing: /home/avi/ros2_ws/install/ei_classification/share/ament_index/resource_index/rosidl_interfaces/ei_classification
+[1.935s] -- Installing: /home/avi/ros2_ws/install/ei_classification/include/ei_classification/ei_classification
+[1.935s] -- Installing: /home/avi/ros2_ws/install/ei_classification/include/ei_classification/ei_classification/msg
+[1.935s] -- Installing: /home/avi/ros2_ws/install/ei_classification/include/ei_classification/ei_classification/msg/ei_classification.h
+[1.935s] -- Installing: /home/avi/ros2_ws/install/ei_classification/include/ei_classification/ei_classification/msg/detail
+[1.935s] -- Installing: /home/avi/ros2_ws/install/ei_classification/include/ei_classification/ei_classification/msg/detail/ei_classification__struct.h
+[1.936s] -- Installing: /home/avi/ros2_ws/install/ei_classification/include/ei_classification/ei_classification/msg/detail/ei_classification__type_support.h
+[1.936s] -- Installing: /home/avi/ros2_ws/install/ei_classification/include/ei_classification/ei_classification/msg/detail/ei_classification__functions.h
+[1.936s] -- Installing: /home/avi/ros2_ws/install/ei_classification/include/ei_classification/ei_classification/msg/detail/ei_classification__functions.c
+[1.936s] -- Installing: /home/avi/ros2_ws/install/ei_classification/include/ei_classification/ei_classification/msg/rosidl_generator_c__visibility_control.h
+[1.936s] -- Installing: /home/avi/ros2_ws/install/ei_classification/share/ei_classification/environment/library_path.sh
+[1.936s] -- Installing: /home/avi/ros2_ws/install/ei_classification/share/ei_classification/environment/library_path.dsv
+[1.936s] -- Installing: /home/avi/ros2_ws/install/ei_classification/lib/libei_classification__rosidl_generator_c.so
+[1.936s] -- Set runtime path of "/home/avi/ros2_ws/install/ei_classification/lib/libei_classification__rosidl_generator_c.so" to ""
+[1.936s] -- Up-to-date: /home/avi/ros2_ws/install/ei_classification/include/ei_classification/ei_classification
+[1.936s] -- Up-to-date: /home/avi/ros2_ws/install/ei_classification/include/ei_classification/ei_classification/msg
+[1.936s] -- Installing: /home/avi/ros2_ws/install/ei_classification/include/ei_classification/ei_classification/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.936s] -- Up-to-date: /home/avi/ros2_ws/install/ei_classification/include/ei_classification/ei_classification/msg/detail
+[1.936s] -- Installing: /home/avi/ros2_ws/install/ei_classification/include/ei_classification/ei_classification/msg/detail/ei_classification__rosidl_typesupport_fastrtps_c.h
+[1.936s] -- Installing: /home/avi/ros2_ws/install/ei_classification/lib/libei_classification__rosidl_typesupport_fastrtps_c.so
+[1.937s] -- Set runtime path of "/home/avi/ros2_ws/install/ei_classification/lib/libei_classification__rosidl_typesupport_fastrtps_c.so" to ""
+[1.937s] -- Up-to-date: /home/avi/ros2_ws/install/ei_classification/include/ei_classification/ei_classification
+[1.937s] -- Up-to-date: /home/avi/ros2_ws/install/ei_classification/include/ei_classification/ei_classification/msg
+[1.937s] -- Up-to-date: /home/avi/ros2_ws/install/ei_classification/include/ei_classification/ei_classification/msg/detail
+[1.937s] -- Installing: /home/avi/ros2_ws/install/ei_classification/include/ei_classification/ei_classification/msg/detail/ei_classification__rosidl_typesupport_introspection_c.h
+[1.937s] -- Installing: /home/avi/ros2_ws/install/ei_classification/include/ei_classification/ei_classification/msg/detail/ei_classification__type_support.c
+[1.937s] -- Installing: /home/avi/ros2_ws/install/ei_classification/include/ei_classification/ei_classification/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.937s] -- Installing: /home/avi/ros2_ws/install/ei_classification/lib/libei_classification__rosidl_typesupport_introspection_c.so
+[1.937s] -- Set runtime path of "/home/avi/ros2_ws/install/ei_classification/lib/libei_classification__rosidl_typesupport_introspection_c.so" to ""
+[1.937s] -- Installing: /home/avi/ros2_ws/install/ei_classification/lib/libei_classification__rosidl_typesupport_c.so
+[1.937s] -- Set runtime path of "/home/avi/ros2_ws/install/ei_classification/lib/libei_classification__rosidl_typesupport_c.so" to ""
+[1.937s] -- Up-to-date: /home/avi/ros2_ws/install/ei_classification/include/ei_classification/ei_classification
+[1.937s] -- Up-to-date: /home/avi/ros2_ws/install/ei_classification/include/ei_classification/ei_classification/msg
+[1.937s] -- Up-to-date: /home/avi/ros2_ws/install/ei_classification/include/ei_classification/ei_classification/msg/detail
+[1.937s] -- Installing: /home/avi/ros2_ws/install/ei_classification/include/ei_classification/ei_classification/msg/detail/ei_classification__struct.hpp
+[1.937s] -- Installing: /home/avi/ros2_ws/install/ei_classification/include/ei_classification/ei_classification/msg/detail/ei_classification__builder.hpp
+[1.938s] -- Installing: /home/avi/ros2_ws/install/ei_classification/include/ei_classification/ei_classification/msg/detail/ei_classification__traits.hpp
+[1.938s] -- Installing: /home/avi/ros2_ws/install/ei_classification/include/ei_classification/ei_classification/msg/ei_classification.hpp
+[1.938s] -- Up-to-date: /home/avi/ros2_ws/install/ei_classification/include/ei_classification/ei_classification
+[1.938s] -- Up-to-date: /home/avi/ros2_ws/install/ei_classification/include/ei_classification/ei_classification/msg
+[1.938s] -- Up-to-date: /home/avi/ros2_ws/install/ei_classification/include/ei_classification/ei_classification/msg/detail
+[1.938s] -- Installing: /home/avi/ros2_ws/install/ei_classification/include/ei_classification/ei_classification/msg/detail/dds_fastrtps
+[1.938s] -- Installing: /home/avi/ros2_ws/install/ei_classification/include/ei_classification/ei_classification/msg/detail/ei_classification__rosidl_typesupport_fastrtps_cpp.hpp
+[1.938s] -- Installing: /home/avi/ros2_ws/install/ei_classification/include/ei_classification/ei_classification/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.938s] -- Installing: /home/avi/ros2_ws/install/ei_classification/lib/libei_classification__rosidl_typesupport_fastrtps_cpp.so
+[1.938s] -- Set runtime path of "/home/avi/ros2_ws/install/ei_classification/lib/libei_classification__rosidl_typesupport_fastrtps_cpp.so" to ""
+[1.938s] -- Up-to-date: /home/avi/ros2_ws/install/ei_classification/include/ei_classification/ei_classification
+[1.938s] -- Up-to-date: /home/avi/ros2_ws/install/ei_classification/include/ei_classification/ei_classification/msg
+[1.938s] -- Up-to-date: /home/avi/ros2_ws/install/ei_classification/include/ei_classification/ei_classification/msg/detail
+[1.938s] -- Installing: /home/avi/ros2_ws/install/ei_classification/include/ei_classification/ei_classification/msg/detail/ei_classification__rosidl_typesupport_introspection_cpp.hpp
+[1.938s] -- Installing: /home/avi/ros2_ws/install/ei_classification/include/ei_classification/ei_classification/msg/detail/ei_classification__type_support.cpp
+[1.938s] -- Installing: /home/avi/ros2_ws/install/ei_classification/lib/libei_classification__rosidl_typesupport_introspection_cpp.so
+[1.938s] -- Set runtime path of "/home/avi/ros2_ws/install/ei_classification/lib/libei_classification__rosidl_typesupport_introspection_cpp.so" to ""
+[1.938s] -- Installing: /home/avi/ros2_ws/install/ei_classification/lib/libei_classification__rosidl_typesupport_cpp.so
+[1.938s] -- Set runtime path of "/home/avi/ros2_ws/install/ei_classification/lib/libei_classification__rosidl_typesupport_cpp.so" to ""
+[1.939s] -- Installing: /home/avi/ros2_ws/install/ei_classification/share/ei_classification/environment/pythonpath.sh
+[1.939s] -- Installing: /home/avi/ros2_ws/install/ei_classification/share/ei_classification/environment/pythonpath.dsv
+[1.939s] -- Installing: /home/avi/ros2_ws/install/ei_classification/local/lib/python3.10/dist-packages/ei_classification-0.0.0-py3.10.egg-info
+[1.939s] -- Installing: /home/avi/ros2_ws/install/ei_classification/local/lib/python3.10/dist-packages/ei_classification-0.0.0-py3.10.egg-info/top_level.txt
+[1.939s] -- Installing: /home/avi/ros2_ws/install/ei_classification/local/lib/python3.10/dist-packages/ei_classification-0.0.0-py3.10.egg-info/PKG-INFO
+[1.939s] -- Installing: /home/avi/ros2_ws/install/ei_classification/local/lib/python3.10/dist-packages/ei_classification-0.0.0-py3.10.egg-info/dependency_links.txt
+[1.939s] -- Installing: /home/avi/ros2_ws/install/ei_classification/local/lib/python3.10/dist-packages/ei_classification-0.0.0-py3.10.egg-info/SOURCES.txt
+[1.939s] -- Installing: /home/avi/ros2_ws/install/ei_classification/local/lib/python3.10/dist-packages/ei_classification
+[1.939s] -- Installing: /home/avi/ros2_ws/install/ei_classification/local/lib/python3.10/dist-packages/ei_classification/_ei_classification_s.ep.rosidl_typesupport_c.c
+[1.939s] -- Installing: /home/avi/ros2_ws/install/ei_classification/local/lib/python3.10/dist-packages/ei_classification/_ei_classification_s.ep.rosidl_typesupport_introspection_c.c
+[1.939s] -- Installing: /home/avi/ros2_ws/install/ei_classification/local/lib/python3.10/dist-packages/ei_classification/_ei_classification_s.ep.rosidl_typesupport_fastrtps_c.c
+[1.939s] -- Installing: /home/avi/ros2_ws/install/ei_classification/local/lib/python3.10/dist-packages/ei_classification/ei_classification_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.939s] -- Installing: /home/avi/ros2_ws/install/ei_classification/local/lib/python3.10/dist-packages/ei_classification/libei_classification__rosidl_generator_py.so
+[1.939s] -- Installing: /home/avi/ros2_ws/install/ei_classification/local/lib/python3.10/dist-packages/ei_classification/__init__.py
+[1.939s] -- Installing: /home/avi/ros2_ws/install/ei_classification/local/lib/python3.10/dist-packages/ei_classification/ei_classification_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.939s] -- Installing: /home/avi/ros2_ws/install/ei_classification/local/lib/python3.10/dist-packages/ei_classification/ei_classification_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.939s] -- Installing: /home/avi/ros2_ws/install/ei_classification/local/lib/python3.10/dist-packages/ei_classification/msg
+[1.940s] -- Installing: /home/avi/ros2_ws/install/ei_classification/local/lib/python3.10/dist-packages/ei_classification/msg/__init__.py
+[1.940s] -- Installing: /home/avi/ros2_ws/install/ei_classification/local/lib/python3.10/dist-packages/ei_classification/msg/_ei_classification.py
+[1.940s] -- Installing: /home/avi/ros2_ws/install/ei_classification/local/lib/python3.10/dist-packages/ei_classification/msg/_ei_classification_s.c
+[1.960s] Listing '/home/avi/ros2_ws/install/ei_classification/local/lib/python3.10/dist-packages/ei_classification'...
+[1.960s] Compiling '/home/avi/ros2_ws/install/ei_classification/local/lib/python3.10/dist-packages/ei_classification/__init__.py'...
+[1.960s] Listing '/home/avi/ros2_ws/install/ei_classification/local/lib/python3.10/dist-packages/ei_classification/msg'...
+[1.960s] Compiling '/home/avi/ros2_ws/install/ei_classification/local/lib/python3.10/dist-packages/ei_classification/msg/__init__.py'...
+[1.960s] Compiling '/home/avi/ros2_ws/install/ei_classification/local/lib/python3.10/dist-packages/ei_classification/msg/_ei_classification.py'...
+[1.963s] -- Installing: /home/avi/ros2_ws/install/ei_classification/local/lib/python3.10/dist-packages/ei_classification/ei_classification_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.963s] -- Set runtime path of "/home/avi/ros2_ws/install/ei_classification/local/lib/python3.10/dist-packages/ei_classification/ei_classification_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[1.963s] -- Installing: /home/avi/ros2_ws/install/ei_classification/local/lib/python3.10/dist-packages/ei_classification/ei_classification_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.963s] -- Set runtime path of "/home/avi/ros2_ws/install/ei_classification/local/lib/python3.10/dist-packages/ei_classification/ei_classification_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[1.963s] -- Installing: /home/avi/ros2_ws/install/ei_classification/local/lib/python3.10/dist-packages/ei_classification/ei_classification_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.963s] -- Set runtime path of "/home/avi/ros2_ws/install/ei_classification/local/lib/python3.10/dist-packages/ei_classification/ei_classification_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[1.963s] -- Installing: /home/avi/ros2_ws/install/ei_classification/lib/libei_classification__rosidl_generator_py.so
+[1.963s] -- Set runtime path of "/home/avi/ros2_ws/install/ei_classification/lib/libei_classification__rosidl_generator_py.so" to ""
+[1.964s] -- Installing: /home/avi/ros2_ws/install/ei_classification/share/ei_classification/msg/EIClassification.idl
+[1.964s] -- Installing: /home/avi/ros2_ws/install/ei_classification/share/ei_classification/msg/EIClassification.msg
+[1.964s] -- Installing: /home/avi/ros2_ws/install/ei_classification/share/ament_index/resource_index/package_run_dependencies/ei_classification
+[1.964s] -- Installing: /home/avi/ros2_ws/install/ei_classification/share/ament_index/resource_index/parent_prefix_path/ei_classification
+[1.964s] -- Installing: /home/avi/ros2_ws/install/ei_classification/share/ei_classification/environment/ament_prefix_path.sh
+[1.964s] -- Installing: /home/avi/ros2_ws/install/ei_classification/share/ei_classification/environment/ament_prefix_path.dsv
+[1.964s] -- Installing: /home/avi/ros2_ws/install/ei_classification/share/ei_classification/environment/path.sh
+[1.964s] -- Installing: /home/avi/ros2_ws/install/ei_classification/share/ei_classification/environment/path.dsv
+[1.964s] -- Installing: /home/avi/ros2_ws/install/ei_classification/share/ei_classification/local_setup.bash
+[1.964s] -- Installing: /home/avi/ros2_ws/install/ei_classification/share/ei_classification/local_setup.sh
+[1.964s] -- Installing: /home/avi/ros2_ws/install/ei_classification/share/ei_classification/local_setup.zsh
+[1.964s] -- Installing: /home/avi/ros2_ws/install/ei_classification/share/ei_classification/local_setup.dsv
+[1.964s] -- Installing: /home/avi/ros2_ws/install/ei_classification/share/ei_classification/package.dsv
+[1.965s] -- Installing: /home/avi/ros2_ws/install/ei_classification/share/ament_index/resource_index/packages/ei_classification
+[1.965s] -- Installing: /home/avi/ros2_ws/install/ei_classification/share/ei_classification/cmake/export_ei_classification__rosidl_generator_cExport.cmake
+[1.965s] -- Installing: /home/avi/ros2_ws/install/ei_classification/share/ei_classification/cmake/export_ei_classification__rosidl_generator_cExport-noconfig.cmake
+[1.965s] -- Installing: /home/avi/ros2_ws/install/ei_classification/share/ei_classification/cmake/export_ei_classification__rosidl_typesupport_fastrtps_cExport.cmake
+[1.965s] -- Installing: /home/avi/ros2_ws/install/ei_classification/share/ei_classification/cmake/export_ei_classification__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[1.965s] -- Installing: /home/avi/ros2_ws/install/ei_classification/share/ei_classification/cmake/ei_classification__rosidl_typesupport_introspection_cExport.cmake
+[1.965s] -- Installing: /home/avi/ros2_ws/install/ei_classification/share/ei_classification/cmake/ei_classification__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.965s] -- Installing: /home/avi/ros2_ws/install/ei_classification/share/ei_classification/cmake/ei_classification__rosidl_typesupport_cExport.cmake
+[1.965s] -- Installing: /home/avi/ros2_ws/install/ei_classification/share/ei_classification/cmake/ei_classification__rosidl_typesupport_cExport-noconfig.cmake
+[1.965s] -- Installing: /home/avi/ros2_ws/install/ei_classification/share/ei_classification/cmake/export_ei_classification__rosidl_generator_cppExport.cmake
+[1.965s] -- Installing: /home/avi/ros2_ws/install/ei_classification/share/ei_classification/cmake/export_ei_classification__rosidl_typesupport_fastrtps_cppExport.cmake
+[1.965s] -- Installing: /home/avi/ros2_ws/install/ei_classification/share/ei_classification/cmake/export_ei_classification__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[1.965s] -- Installing: /home/avi/ros2_ws/install/ei_classification/share/ei_classification/cmake/ei_classification__rosidl_typesupport_introspection_cppExport.cmake
+[1.965s] -- Installing: /home/avi/ros2_ws/install/ei_classification/share/ei_classification/cmake/ei_classification__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.966s] -- Installing: /home/avi/ros2_ws/install/ei_classification/share/ei_classification/cmake/ei_classification__rosidl_typesupport_cppExport.cmake
+[1.966s] -- Installing: /home/avi/ros2_ws/install/ei_classification/share/ei_classification/cmake/ei_classification__rosidl_typesupport_cppExport-noconfig.cmake
+[1.966s] -- Installing: /home/avi/ros2_ws/install/ei_classification/share/ei_classification/cmake/export_ei_classification__rosidl_generator_pyExport.cmake
+[1.966s] -- Installing: /home/avi/ros2_ws/install/ei_classification/share/ei_classification/cmake/export_ei_classification__rosidl_generator_pyExport-noconfig.cmake
+[1.966s] -- Installing: /home/avi/ros2_ws/install/ei_classification/share/ei_classification/cmake/rosidl_cmake-extras.cmake
+[1.966s] -- Installing: /home/avi/ros2_ws/install/ei_classification/share/ei_classification/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.966s] -- Installing: /home/avi/ros2_ws/install/ei_classification/share/ei_classification/cmake/ament_cmake_export_libraries-extras.cmake
+[1.966s] -- Installing: /home/avi/ros2_ws/install/ei_classification/share/ei_classification/cmake/ament_cmake_export_targets-extras.cmake
+[1.966s] -- Installing: /home/avi/ros2_ws/install/ei_classification/share/ei_classification/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.966s] -- Installing: /home/avi/ros2_ws/install/ei_classification/share/ei_classification/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.966s] -- Installing: /home/avi/ros2_ws/install/ei_classification/share/ei_classification/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.966s] -- Installing: /home/avi/ros2_ws/install/ei_classification/share/ei_classification/cmake/ei_classificationConfig.cmake
+[1.966s] -- Installing: /home/avi/ros2_ws/install/ei_classification/share/ei_classification/cmake/ei_classificationConfig-version.cmake
+[1.966s] -- Installing: /home/avi/ros2_ws/install/ei_classification/share/ei_classification/package.xml
+[1.968s] Invoked command in '/home/avi/ros2_ws/build/ei_classification' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/avi/ros2_ws/build/ei_classification

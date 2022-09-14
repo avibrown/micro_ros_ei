@@ -1,0 +1,3 @@
+[0mCMake Error: The source directory "/home/avi/ros2_ws/src/ei_interfaces" does not exist.
+Specify --help for usage, or press the help button on the CMake GUI.[0m
+gmake: *** [Makefile:963: cmake_check_build_system] Error 1

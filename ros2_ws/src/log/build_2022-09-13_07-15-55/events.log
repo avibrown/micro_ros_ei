@@ -1,0 +1,209 @@
+[0.000000] (-) TimerEvent: {}
+[0.000097] (-) JobUnselected: {'identifier': 'turtlesim'}
+[0.000117] (ei_interfaces) JobQueued: {'identifier': 'ei_interfaces', 'dependencies': OrderedDict()}
+[0.000130] (ei_interfaces) JobStarted: {'identifier': 'ei_interfaces'}
+[0.006090] (ei_interfaces) JobProgress: {'identifier': 'ei_interfaces', 'progress': 'cmake'}
+[0.006988] (ei_interfaces) JobProgress: {'identifier': 'ei_interfaces', 'progress': 'build'}
+[0.007018] (ei_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/avi/ros2_ws/src/build/ei_interfaces', '--', '-j8', '-l8'], 'cwd': '/home/avi/ros2_ws/src/build/ei_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IL:en'), ('USER', 'avi'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/avi/ros2_ws/install/ei_interfaces/lib:/home/avi/ros2_ws/install/ei_classification/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/avi'), ('OLDPWD', '/home/avi/ros2_ws/src/ei_interfaces'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2569'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=021211262ddcd69600cd591d631f4c2d'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/avi/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'avi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'avi'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/avi/.npm-global/bin:/home/avi/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mew:@/tmp/.ICE-unix/2569,unix/mew:/tmp/.ICE-unix/2569'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9a715d57_c022_4ede_93d3_1038ebe5fc40'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.L320R1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.131'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/avi/ros2_ws/install/ei_interfaces:/home/avi/ros2_ws/install/ei_classification:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/avi/ros2_ws/src/build/ei_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=021211262ddcd69600cd591d631f4c2d'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/avi/ros2_ws/install/ei_interfaces/local/lib/python3.10/dist-packages:/home/avi/ros2_ws/install/ei_classification/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/avi/ros2_ws/install/ei_interfaces:/home/avi/ros2_ws/install/ei_classification:/opt/ros/humble')]), 'shell': False}
+[0.022305] (ei_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.2 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099331] (-) TimerEvent: {}
+[0.114838] (ei_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.4 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.162449] (ei_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.163432] (ei_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.165072] (ei_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.3 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.182961] (ei_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.199550] (-) TimerEvent: {}
+[0.299899] (-) TimerEvent: {}
+[0.308412] (ei_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.400080] (-) TimerEvent: {}
+[0.423483] (ei_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.500244] (-) TimerEvent: {}
+[0.576743] (ei_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.591454] (ei_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[0.600408] (-) TimerEvent: {}
+[0.605151] (ei_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.605243] (ei_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[0.605286] (ei_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[0.613973] (ei_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.614620] (ei_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.616385] (ei_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.630617] (ei_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[0.632121] (ei_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/avi/ros2_ws/src/build/ei_interfaces\n'}
+[0.647016] (ei_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ei_interfaces__rosidl_generator_c\x1b[0m\n'}
+[0.652205] (ei_interfaces) StdoutLine: {'line': b'[  2%] Built target ei_interfaces__cpp\n'}
+[0.652663] (ei_interfaces) StdoutLine: {'line': b'[ 12%] Built target ei_interfaces__rosidl_generator_c\n'}
+[0.658295] (ei_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ei_interfaces__rosidl_typesupport_cpp\x1b[0m\n'}
+[0.658550] (ei_interfaces) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_ei_interfaces\n'}
+[0.659565] (ei_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ei_interfaces__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[0.659705] (ei_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ei_interfaces__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[0.660105] (ei_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ei_interfaces__rosidl_typesupport_c\x1b[0m\n'}
+[0.660227] (ei_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ei_interfaces__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[0.660302] (ei_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ei_interfaces__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[0.668307] (ei_interfaces) StdoutLine: {'line': b'[ 23%] Built target ei_interfaces__rosidl_typesupport_cpp\n'}
+[0.668546] (ei_interfaces) StdoutLine: {'line': b'[ 43%] Built target ei_interfaces__rosidl_typesupport_c\n'}
+[0.668618] (ei_interfaces) StdoutLine: {'line': b'[ 43%] Built target ei_interfaces__rosidl_typesupport_introspection_c\n'}
+[0.669362] (ei_interfaces) StdoutLine: {'line': b'[ 53%] Built target ei_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[0.669866] (ei_interfaces) StdoutLine: {'line': b'[ 64%] Built target ei_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[0.670075] (ei_interfaces) StdoutLine: {'line': b'[ 74%] Built target ei_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[0.680791] (ei_interfaces) StdoutLine: {'line': b'[ 74%] Built target ei_interfaces\n'}
+[0.692478] (ei_interfaces) StdoutLine: {'line': b'[ 76%] Built target ei_interfaces__py\n'}
+[0.698257] (ei_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ei_interfaces__rosidl_generator_py\x1b[0m\n'}
+[0.700487] (-) TimerEvent: {}
+[0.705724] (ei_interfaces) StdoutLine: {'line': b'[ 84%] Built target ei_interfaces__rosidl_generator_py\n'}
+[0.711323] (ei_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ei_interfaces__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[0.711503] (ei_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ei_interfaces__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[0.711569] (ei_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ei_interfaces__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[0.718494] (ei_interfaces) StdoutLine: {'line': b'[ 97%] Built target ei_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[0.718666] (ei_interfaces) StdoutLine: {'line': b'[ 97%] Built target ei_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.718724] (ei_interfaces) StdoutLine: {'line': b'[100%] Built target ei_interfaces__rosidl_typesupport_c__pyext\n'}
+[0.797799] (ei_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[0.798106] (ei_interfaces) StdoutLine: {'line': b'writing ei_interfaces.egg-info/PKG-INFO\n'}
+[0.798171] (ei_interfaces) StdoutLine: {'line': b'writing dependency_links to ei_interfaces.egg-info/dependency_links.txt\n'}
+[0.798296] (ei_interfaces) StdoutLine: {'line': b'writing top-level names to ei_interfaces.egg-info/top_level.txt\n'}
+[0.799636] (ei_interfaces) StdoutLine: {'line': b"reading manifest file 'ei_interfaces.egg-info/SOURCES.txt'\n"}
+[0.799790] (ei_interfaces) StdoutLine: {'line': b"writing manifest file 'ei_interfaces.egg-info/SOURCES.txt'\n"}
+[0.800570] (-) TimerEvent: {}
+[0.815391] (ei_interfaces) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_ei_interfaces_egg\n'}
+[0.821742] (ei_interfaces) CommandEnded: {'returncode': 0}
+[0.863173] (ei_interfaces) JobProgress: {'identifier': 'ei_interfaces', 'progress': 'install'}
+[0.867757] (ei_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/avi/ros2_ws/src/build/ei_interfaces'], 'cwd': '/home/avi/ros2_ws/src/build/ei_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IL:en'), ('USER', 'avi'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/avi/ros2_ws/install/ei_interfaces/lib:/home/avi/ros2_ws/install/ei_classification/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/avi'), ('OLDPWD', '/home/avi/ros2_ws/src/ei_interfaces'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2569'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=021211262ddcd69600cd591d631f4c2d'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/avi/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'avi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'avi'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/avi/.npm-global/bin:/home/avi/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mew:@/tmp/.ICE-unix/2569,unix/mew:/tmp/.ICE-unix/2569'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9a715d57_c022_4ede_93d3_1038ebe5fc40'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.L320R1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.131'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/avi/ros2_ws/install/ei_interfaces:/home/avi/ros2_ws/install/ei_classification:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/avi/ros2_ws/src/build/ei_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=021211262ddcd69600cd591d631f4c2d'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/avi/ros2_ws/install/ei_interfaces/local/lib/python3.10/dist-packages:/home/avi/ros2_ws/install/ei_classification/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/avi/ros2_ws/install/ei_interfaces:/home/avi/ros2_ws/install/ei_classification:/opt/ros/humble')]), 'shell': False}
+[0.874450] (ei_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.874764] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/share/ament_index/resource_index/rosidl_interfaces/ei_interfaces\n'}
+[0.874882] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces\n'}
+[0.874941] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg\n'}
+[0.875006] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/ei_classification.h\n'}
+[0.875079] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/ei_result.h\n'}
+[0.875167] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail\n'}
+[0.875298] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail/ei_classification__struct.h\n'}
+[0.875385] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail/ei_classification__type_support.h\n'}
+[0.875501] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail/ei_result__struct.h\n'}
+[0.875573] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail/ei_classification__functions.h\n'}
+[0.875662] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail/ei_result__functions.h\n'}
+[0.875809] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail/ei_result__functions.c\n'}
+[0.875890] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail/ei_classification__functions.c\n'}
+[0.875995] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail/ei_result__type_support.h\n'}
+[0.876067] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.876140] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/share/ei_interfaces/environment/library_path.sh\n'}
+[0.876224] (ei_interfaces) StdoutLine: {'line': b'-- Installing: /home/avi/ros2_ws/src/install/ei_interfaces/share/ei_interfaces/environment/library_path.dsv\n'}
+[0.876351] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/lib/libei_interfaces__rosidl_generator_c.so\n'}
+[0.876504] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces\n'}
+[0.876600] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg\n'}
+[0.876711] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.876838] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail\n'}
+[0.876920] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail/ei_classification__rosidl_typesupport_fastrtps_c.h\n'}
+[0.877010] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail/ei_result__rosidl_typesupport_fastrtps_c.h\n'}
+[0.877178] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/lib/libei_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[0.877266] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces\n'}
+[0.877352] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg\n'}
+[0.877434] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail\n'}
+[0.877513] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail/ei_classification__rosidl_typesupport_introspection_c.h\n'}
+[0.877594] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail/ei_result__type_support.c\n'}
+[0.877674] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail/ei_classification__type_support.c\n'}
+[0.877756] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail/ei_result__rosidl_typesupport_introspection_c.h\n'}
+[0.877837] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.877917] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/lib/libei_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[0.877999] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/lib/libei_interfaces__rosidl_typesupport_c.so\n'}
+[0.878089] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces\n'}
+[0.878243] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg\n'}
+[0.878327] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/ei_result.hpp\n'}
+[0.878366] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail\n'}
+[0.878403] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail/ei_classification__struct.hpp\n'}
+[0.878440] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail/ei_result__struct.hpp\n'}
+[0.878480] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail/ei_classification__builder.hpp\n'}
+[0.878517] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail/ei_result__builder.hpp\n'}
+[0.878554] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail/ei_classification__traits.hpp\n'}
+[0.878602] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail/ei_result__traits.hpp\n'}
+[0.878640] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/ei_classification.hpp\n'}
+[0.878677] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces\n'}
+[0.878714] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg\n'}
+[0.878751] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail\n'}
+[0.878838] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail/ei_result__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.878871] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail/dds_fastrtps\n'}
+[0.878904] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail/ei_classification__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.878937] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.878969] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/lib/libei_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.879001] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces\n'}
+[0.879034] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg\n'}
+[0.879066] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail\n'}
+[0.879100] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail/ei_result__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.879133] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail/ei_result__type_support.cpp\n'}
+[0.879166] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail/ei_classification__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.879198] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/include/ei_interfaces/ei_interfaces/msg/detail/ei_classification__type_support.cpp\n'}
+[0.879232] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/lib/libei_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[0.879264] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/lib/libei_interfaces__rosidl_typesupport_cpp.so\n'}
+[0.879295] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/share/ei_interfaces/environment/pythonpath.sh\n'}
+[0.879328] (ei_interfaces) StdoutLine: {'line': b'-- Installing: /home/avi/ros2_ws/src/install/ei_interfaces/share/ei_interfaces/environment/pythonpath.dsv\n'}
+[0.879360] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces-0.0.0-py3.10.egg-info\n'}
+[0.879392] (ei_interfaces) StdoutLine: {'line': b'-- Installing: /home/avi/ros2_ws/src/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[0.879426] (ei_interfaces) StdoutLine: {'line': b'-- Installing: /home/avi/ros2_ws/src/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[0.879458] (ei_interfaces) StdoutLine: {'line': b'-- Installing: /home/avi/ros2_ws/src/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[0.879494] (ei_interfaces) StdoutLine: {'line': b'-- Installing: /home/avi/ros2_ws/src/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[0.879526] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces\n'}
+[0.879559] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces/_ei_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.879591] (ei_interfaces) StdoutLine: {'line': b'-- Installing: /home/avi/ros2_ws/src/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces/__init__.py\n'}
+[0.879624] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces/libei_interfaces__rosidl_generator_py.so\n'}
+[0.879657] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces/_ei_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[0.879690] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces/ei_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.879722] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces/ei_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.879755] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces/ei_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.879787] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces/_ei_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.879819] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces/msg\n'}
+[0.879851] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces/msg/_ei_result_s.c\n'}
+[0.879883] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces/msg/_ei_result.py\n'}
+[0.879915] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces/msg/__init__.py\n'}
+[0.879946] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces/msg/_ei_classification.py\n'}
+[0.879980] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces/msg/_ei_classification_s.c\n'}
+[0.897528] (ei_interfaces) StdoutLine: {'line': b"Listing '/home/avi/ros2_ws/src/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces'...\n"}
+[0.897632] (ei_interfaces) StdoutLine: {'line': b"Compiling '/home/avi/ros2_ws/src/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces/__init__.py'...\n"}
+[0.897675] (ei_interfaces) StdoutLine: {'line': b"Listing '/home/avi/ros2_ws/src/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces/msg'...\n"}
+[0.900278] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces/ei_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.900475] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces/ei_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.900573] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/local/lib/python3.10/dist-packages/ei_interfaces/ei_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.900618] (-) TimerEvent: {}
+[0.900766] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/lib/libei_interfaces__rosidl_generator_py.so\n'}
+[0.900854] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/share/ei_interfaces/msg/EIClassification.idl\n'}
+[0.900899] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/share/ei_interfaces/msg/EIResult.idl\n'}
+[0.900939] (ei_interfaces) StdoutLine: {'line': b'-- Installing: /home/avi/ros2_ws/src/install/ei_interfaces/share/ei_interfaces/msg/EIClassification.msg\n'}
+[0.900978] (ei_interfaces) StdoutLine: {'line': b'-- Installing: /home/avi/ros2_ws/src/install/ei_interfaces/share/ei_interfaces/msg/EIResult.msg\n'}
+[0.901016] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/share/ament_index/resource_index/package_run_dependencies/ei_interfaces\n'}
+[0.901055] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/share/ament_index/resource_index/parent_prefix_path/ei_interfaces\n'}
+[0.901111] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/share/ei_interfaces/environment/ament_prefix_path.sh\n'}
+[0.901186] (ei_interfaces) StdoutLine: {'line': b'-- Installing: /home/avi/ros2_ws/src/install/ei_interfaces/share/ei_interfaces/environment/ament_prefix_path.dsv\n'}
+[0.901220] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/share/ei_interfaces/environment/path.sh\n'}
+[0.901256] (ei_interfaces) StdoutLine: {'line': b'-- Installing: /home/avi/ros2_ws/src/install/ei_interfaces/share/ei_interfaces/environment/path.dsv\n'}
+[0.901294] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/share/ei_interfaces/local_setup.bash\n'}
+[0.901331] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/share/ei_interfaces/local_setup.sh\n'}
+[0.901367] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/share/ei_interfaces/local_setup.zsh\n'}
+[0.901405] (ei_interfaces) StdoutLine: {'line': b'-- Installing: /home/avi/ros2_ws/src/install/ei_interfaces/share/ei_interfaces/local_setup.dsv\n'}
+[0.901442] (ei_interfaces) StdoutLine: {'line': b'-- Installing: /home/avi/ros2_ws/src/install/ei_interfaces/share/ei_interfaces/package.dsv\n'}
+[0.901495] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/share/ament_index/resource_index/packages/ei_interfaces\n'}
+[0.901562] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/share/ei_interfaces/cmake/export_ei_interfaces__rosidl_generator_cExport.cmake\n'}
+[0.901601] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/share/ei_interfaces/cmake/export_ei_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.901639] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/share/ei_interfaces/cmake/export_ei_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.901697] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/share/ei_interfaces/cmake/export_ei_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[0.901735] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/share/ei_interfaces/cmake/ei_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.901772] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/share/ei_interfaces/cmake/ei_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.901809] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/share/ei_interfaces/cmake/ei_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[0.901856] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/share/ei_interfaces/cmake/ei_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.901895] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/share/ei_interfaces/cmake/export_ei_interfaces__rosidl_generator_cppExport.cmake\n'}
+[0.901932] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/share/ei_interfaces/cmake/export_ei_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.901969] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/share/ei_interfaces/cmake/export_ei_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[0.902006] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/share/ei_interfaces/cmake/ei_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.902068] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/share/ei_interfaces/cmake/ei_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.902136] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/share/ei_interfaces/cmake/ei_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[0.902170] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/share/ei_interfaces/cmake/ei_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.902203] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/share/ei_interfaces/cmake/export_ei_interfaces__rosidl_generator_pyExport.cmake\n'}
+[0.902236] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/share/ei_interfaces/cmake/export_ei_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[0.902269] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/share/ei_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[0.902302] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/share/ei_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.902334] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/share/ei_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.902367] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/share/ei_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.902399] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/share/ei_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.902439] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/share/ei_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.902472] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/share/ei_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.902507] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/share/ei_interfaces/cmake/ei_interfacesConfig.cmake\n'}
+[0.902540] (ei_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/avi/ros2_ws/src/install/ei_interfaces/share/ei_interfaces/cmake/ei_interfacesConfig-version.cmake\n'}
+[0.902573] (ei_interfaces) StdoutLine: {'line': b'-- Installing: /home/avi/ros2_ws/src/install/ei_interfaces/share/ei_interfaces/package.xml\n'}
+[0.903669] (ei_interfaces) CommandEnded: {'returncode': 0}
+[0.960907] (ei_interfaces) JobEnded: {'identifier': 'ei_interfaces', 'rc': 0}
+[0.961409] (-) EventReactorShutdown: {}

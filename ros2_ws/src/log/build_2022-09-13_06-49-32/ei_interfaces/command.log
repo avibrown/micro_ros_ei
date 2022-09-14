@@ -1,0 +1,6 @@
+Invoking command in '/home/avi/ros2_ws/src/build/ei_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/avi/ros2_ws/src/ei_interfaces -DCMAKE_INSTALL_PREFIX=/home/avi/ros2_ws/src/install/ei_interfaces
+Invoked command in '/home/avi/ros2_ws/src/build/ei_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/avi/ros2_ws/src/ei_interfaces -DCMAKE_INSTALL_PREFIX=/home/avi/ros2_ws/src/install/ei_interfaces
+Invoking command in '/home/avi/ros2_ws/src/build/ei_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/avi/ros2_ws/src/build/ei_interfaces -- -j8 -l8
+Invoked command in '/home/avi/ros2_ws/src/build/ei_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/avi/ros2_ws/src/build/ei_interfaces -- -j8 -l8
+Invoking command in '/home/avi/ros2_ws/src/build/ei_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/avi/ros2_ws/src/build/ei_interfaces
+Invoked command in '/home/avi/ros2_ws/src/build/ei_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/avi/ros2_ws/src/build/ei_interfaces

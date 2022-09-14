@@ -1,0 +1,7 @@
+{
+  "package_name": "ei_interfaces",
+  "non_idl_tuples": [
+    "/home/avi/ros2_ws/src/ei_interfaces:msg/EIClassification.msg",
+    "/home/avi/ros2_ws/src/ei_interfaces:msg/EIResult.msg"
+  ]
+}

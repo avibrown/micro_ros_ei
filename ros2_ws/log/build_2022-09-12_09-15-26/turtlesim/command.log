@@ -1,0 +1,2 @@
+Invoking command in '/home/avi/ros2_ws/build/turtlesim': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/avi/ros2_ws/src/ros_tutorials/turtlesim -DCMAKE_INSTALL_PREFIX=/home/avi/ros2_ws/install/turtlesim
+Invoked command in '/home/avi/ros2_ws/build/turtlesim' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/avi/ros2_ws/src/ros_tutorials/turtlesim -DCMAKE_INSTALL_PREFIX=/home/avi/ros2_ws/install/turtlesim

@@ -1,0 +1,5 @@
+[0.013s] Invoking command in '/home/avi/ros2_ws/build/ei_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/avi/ros2_ws/build/ei_interfaces -- -j8 -l8
+[0.041s] [0mCMake Error: The source directory "/home/avi/ros2_ws/src/ei_interfaces" does not exist.
+[0.041s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[0.043s] gmake: *** [Makefile:963: cmake_check_build_system] Error 1
+[0.045s] Invoked command in '/home/avi/ros2_ws/build/ei_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/avi/ros2_ws/build/ei_interfaces -- -j8 -l8

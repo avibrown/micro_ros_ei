@@ -1,0 +1,21 @@
+{
+  "package_name": "ei_interfaces",
+  "output_dir": "/home/avi/ros2_ws/build/ei_interfaces/rosidl_typesupport_fastrtps_c/ei_interfaces",
+  "template_dir": "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource",
+  "idl_tuples": [
+    "/home/avi/ros2_ws/build/ei_interfaces/rosidl_adapter/ei_interfaces:msg/EIClassification.idl",
+    "/home/avi/ros2_ws/build/ei_interfaces/rosidl_adapter/ei_interfaces:msg/EIResult.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/humble/lib/rosidl_typesupport_fastrtps_c/rosidl_typesupport_fastrtps_c",
+    "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_fastrtps_c/__init__.py",
+    "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/idl__rosidl_typesupport_fastrtps_c.h.em",
+    "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/idl__type_support_c.cpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/msg__rosidl_typesupport_fastrtps_c.h.em",
+    "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/msg__type_support_c.cpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/srv__rosidl_typesupport_fastrtps_c.h.em",
+    "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/srv__type_support_c.cpp.em",
+    "/home/avi/ros2_ws/build/ei_interfaces/rosidl_adapter/ei_interfaces/msg/EIClassification.idl",
+    "/home/avi/ros2_ws/build/ei_interfaces/rosidl_adapter/ei_interfaces/msg/EIResult.idl"
+  ]
+}

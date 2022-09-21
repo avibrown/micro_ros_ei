@@ -1,3 +1,6 @@
+#ifndef EI_RESULT_PUBLISHER_H
+#define EI_RESULT_PUBLISHER_H
+
 #include <micro_ros_arduino.h>
 
 #include <stdio.h>
@@ -51,14 +54,14 @@ void ei_micro_ros_setup(uint32_t EI_TIMER, uint32_t LABEL_COUNT) {
   RCCHECK(rclc_support_init(&support, 0, NULL, &allocator));
 
   // Create node
-  RCCHECK(rclc_node_init_default(&node, "ei_result_node", "", &support));
+  RCCHECK(rclc_node_init_default(&node, "ei_micro_ros_node", "", &support));
 
   // Create publisher
   RCCHECK(rclc_publisher_init_default(
     &publisher,
     &node,
     ROSIDL_GET_MSG_TYPE_SUPPORT(ei_interfaces, msg, EIResult),
-    "/ei_result_publisher"));
+    "/ei_micro_ros_publisher"));
 
   msg.result.capacity = LABEL_COUNT;
   msg.result.data = (ei_interfaces__msg__EIClassification*) malloc(msg.result.capacity * sizeof(ei_interfaces__msg__EIClassification));
@@ -71,3 +74,5 @@ void ei_micro_ros_setup(uint32_t EI_TIMER, uint32_t LABEL_COUNT) {
       msg.result.size++;
     }
 }
+
+#endif

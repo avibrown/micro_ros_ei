@@ -1,3 +1,7 @@
+#ifndef EI_MICRO_ROS_UTILS_H
+#define EI_MICRO_ROS_UTILS_H
+
+// TODO: make this import unnessecary
 #include <micro_ros_arduino.h>
 #include "ei_result_publisher.h"
 
@@ -13,3 +17,5 @@ void fill_and_publish_msg(ei_impulse_result_t result) {
     
     publish_result(msg);
   }
+
+#endif

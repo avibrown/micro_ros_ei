@@ -72,7 +72,7 @@ void setup()
             ei_dsp_config_image_t config = *((ei_dsp_config_image_t*)block.config);
             int16_t channel_count = strcmp(config.channels, "Grayscale") == 0 ? 1 : 3;
             if (channel_count == 3) {
-                break; // only print this once
+                break;
             }
         }
     }
@@ -210,7 +210,6 @@ bool ei_camera_capture(uint32_t img_width, uint32_t img_height, uint8_t *out_buf
         // if only resizing then and out_buf provided then use itinstead.
         if (out_buf && !do_crop) ei_camera_capture_out = out_buf;
 
-        //ei_printf("resize cols: %d, rows: %d\r\n", resize_col_sz,resize_row_sz);
         ei::image::processing::resize_image(
             ei_camera_frame_buffer,
             EI_CAMERA_RAW_FRAME_BUFFER_COLS,
@@ -234,7 +233,6 @@ bool ei_camera_capture(uint32_t img_width, uint32_t img_height, uint8_t *out_buf
         // if (also) cropping and out_buf provided then use it instead.
         if (out_buf) ei_camera_capture_out = out_buf;
 
-        //ei_printf("crop cols: %d, rows: %d\r\n", crop_col_sz,crop_row_sz);
         ei::image::processing::cropImage(
             ei_camera_frame_buffer,
             resize_col_sz,

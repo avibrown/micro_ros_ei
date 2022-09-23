@@ -1,14 +1,18 @@
 /* Includes ---------------------------------------------------------------- */
+// Replace this with <name_of_ei_library_inferencing.h>
 #include <micro_ros_ei_inferencing.h>
+
 #include "camera.h"
 #include "himax.h"
 #include "edge-impulse-sdk/dsp/image/image.hpp"
-#include "ei_micro_ros_utils.h"
+#include "ei_result_publisher.h"
 
 /* Constant defines -------------------------------------------------------- */
-#define EI_CAMERA_RAW_FRAME_BUFFER_COLS           320
-#define EI_CAMERA_RAW_FRAME_BUFFER_ROWS           240
-#define EI_TIMER                                  10
+#define EI_CAMERA_RAW_FRAME_BUFFER_COLS 320
+#define EI_CAMERA_RAW_FRAME_BUFFER_ROWS 240
+
+// Use this to set frequency -- 10ms is like "as fast as possible"...
+#define EI_TIMER                        10
 
 #define EI_CAMERA_FRAME_BUFFER_SDRAM
 
@@ -54,9 +58,6 @@ void ei_camera_deinit(void);
 bool ei_camera_capture(uint32_t img_width, uint32_t img_height, uint8_t *out_buf) ;
 int calculate_resize_dimensions(uint32_t out_width, uint32_t out_height, uint32_t *resize_col_sz, uint32_t *resize_row_sz, bool *do_resize);
 
-/**
-* @brief      Arduino setup function
-*/
 void setup()
 {
 #ifdef EI_CAMERA_FRAME_BUFFER_SDRAM
@@ -77,7 +78,8 @@ void setup()
         }
     }
 
-    ei_micro_ros_init(EI_TIMER);
+    // Initialize MicroROS publishery
+    ei_micro_ros_setup(EI_TIMER, EI_CLASSIFIER_LABEL_COUNT);
 }
 
 /**
@@ -107,7 +109,8 @@ void loop()
         return;
     }
 
-    fill_and_publish_msg(result);
+    fill_result_msg(result);
+    publish_msg();
 }
 
 /**

@@ -2,6 +2,8 @@
 
 Public Project Link: https://studio.edgeimpulse.com/public/124223
 
+## Video:
+
 [![IMAGE ALT TEXT HERE](https://user-images.githubusercontent.com/63222803/192128408-fe4dcf1f-6a07-4b14-bbea-2861788a89f6.png)](https://youtu.be/6vZEhFB906Y)
 
 
@@ -15,14 +17,14 @@ You'll need to install a few things in order to use the code in this repository:
 
 
 
-
+---
 #### MicroROS Arduino library
 
 Clone the library from [this](https://github.com/micro-ROS/micro_ros_arduino) repository and add the .ZIP folder to your Arduino IDE. This library comes precompiled, but we'll need to rebuild it after we add the custom Edge Impulse ROS2 message types (to be discussed).
 
 
 
-
+---
 #### Custom Edge Impulse message types
 
 To ease the process of interfacing Edge Impulse with MicroROS two custom message types were created:

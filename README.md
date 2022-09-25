@@ -1,34 +1,8 @@
-# ROS2 + Edge Impulse, Part 2: MicroROS
-
-> This tutorial involves invoking an Edge Impulse ML model from within a publisher node in MicroROS. An Arduino Portenta H7 is used for demonstration.
-
-Created by: Avi Brown
-
 Public Project Link: https://studio.edgeimpulse.com/public/124223
 
-< EMBED YOUTUBE VIDEO: https://youtu.be/6vZEhFB906Y >
+**Video:**
 
-### Full code for this project can be found [here](https://github.com/avielbr/micro_ros_ei)
-
-### Background
-
-By popular demand following [Part 1](https://docs.edgeimpulse.com/experts/ros2-part1-pubsub-node) I've decided to change the focus of Part 2 to something that I am particularly excited about, and that is [MicroROS](https://micro.ros.org/). According to their site, MicroROS' mission is -
-
-> Bridging the gap between resource-constrained microcontrollers and larger processors in robotic applications that are based on the Robot Operating System.
-
-They go on to note -
-
-> Microcontrollers are used in almost every robotic product. Typical reasons are:
->
-> - Hardware access
-> - Hard, low-latency real-time
-> - Power saving
-
-So where does AI fit in here? It may seem perhaps an unusual approach - to take something that has traditionally been reserved for high powered processors (running neural networks) and use a tool specifically designed for low-level, memory constrained devices (MicroROS) - but these are precisely the presuppositions TinyML seeks to challenge.
-
-By combining MicroROS and Edge Impulse, the path to creating your own plug-and-play AI-driven peripherals for ROS2 systems becomes much more straightforward. This enables experimentation with a "distributed" approach to AI in robotics, wherein neural networks are run much closer to the sensors, and the central ROS2 computer can enjoy the benefits of model inferences without being bogged down by running many neural networks simultaneously.
-
-
+[![](https://i.imgur.com/MMp14iJ.png)](https://youtu.be/6vZEhFB906Y)
 
 ________________
 
@@ -37,7 +11,7 @@ ________________
 - Arduino Portenta H7 + vision shield
 - Linux computer running ROS2
 
-
+ 
 
 ### Getting started
 

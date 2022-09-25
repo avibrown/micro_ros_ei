@@ -11,7 +11,7 @@ ________________
 - Arduino Portenta H7 + vision shield
 - Linux computer running ROS2
 
- 
+ //
 
 ### Getting started
 

@@ -8,22 +8,22 @@ ________________
 
 ## Equipment and software
 
-- Arduino Portenta H7 + vision shield
+- Arduino Portenta H7 + vision shield (more boards coming soon!)
 - Linux computer running ROS2
 
- //
+
 
 ### Getting started
 
 You'll need to install a few things in order to follow along with this tutorial:
 
-
+___
 
 #### MicroROS Arduino library
 
 Clone the library from [this](https://github.com/micro-ROS/micro_ros_arduino) repository and add the .ZIP folder to your Arduino IDE. This library comes precompiled, but we'll need to rebuild it after we add the custom Edge Impulse ROS2 message types (to be discussed).
 
-
+___
 
 #### Custom Edge Impulse message types
 
@@ -229,20 +229,4 @@ result:
 ```
 
 Now you can subscribe to this topic as you would any other ROS2 topic!
-
----
-
-
-
-### To summarize
-
-In this tutorial we looked at running a neural network and publishing its inferences from within a MicroROS node. Please note that the repository associated with this tutorial will be growing and support for additional boards (incl. non-Arduino boards) will be added. In the meantime your constructive feedback is warmly invited!
-
-
-
-
-
-
-
-
 

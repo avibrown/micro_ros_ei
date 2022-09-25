@@ -329,7 +329,7 @@ int calculate_resize_dimensions(uint32_t out_width, uint32_t out_height, uint32_
 
     return 0;
 }
-
-#if !defined(EI_CLASSIFIER_SENSOR) || EI_CLASSIFIER_SENSOR != EI_CLASSIFIER_SENSOR_CAMERA
-#error "Invalid model for current sensor"
-#endif
+//
+//#if !defined(EI_CLASSIFIER_SENSOR) || EI_CLASSIFIER_SENSOR != EI_CLASSIFIER_SENSOR_CAMERA
+//#error "Invalid model for current sensor"
+//#endif

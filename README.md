@@ -4,7 +4,7 @@ ________________
 
 **Click image for YouTube tutorial video:**
 
-[![](https://i.imgur.com/MMp14iJ.png)](https://youtu.be/23eRmUJdBPs)
+[![](https://i.imgur.com/MMp14iJ.png)](https://youtu.be/_M7Wv-3yFLA)
 
 ________________
 

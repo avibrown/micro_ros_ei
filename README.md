@@ -1,6 +1,4 @@
-Public Project Link: https://studio.edgeimpulse.com/public/124223
-
-________________
+For a full tutorial writeup: https://docs.edgeimpulse.com/experts/ros2-part2-microros
 
 **Click image for YouTube tutorial video:**
 

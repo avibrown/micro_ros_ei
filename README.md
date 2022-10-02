@@ -231,7 +231,8 @@ result:
 Now you can subscribe to this topic as you would any other ROS2 topic! You can access the labels and values like this:
 
 ```python
-msg.result[0].label // 'dog'
-msg.result[0].value // 0.75
+# Remember that the result is an array of classifications
+msg.result[i].label // 'dog'
+msg.result[i].value // 0.75
 ```
 

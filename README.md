@@ -19,7 +19,7 @@ You'll need to install a few things in order to follow along with this tutorial:
 
 ___
 
-#### MicroROS Arduino library
+#### micro-ROS Arduino library
 
 Clone the library from [this](https://github.com/micro-ROS/micro_ros_arduino) repository and add the .ZIP folder to your Arduino IDE. This library comes precompiled, but we'll need to rebuild it after we add the custom Edge Impulse ROS2 message types (to be discussed).
 
@@ -27,12 +27,12 @@ ___
 
 #### Custom Edge Impulse message types
 
-To ease the process of interfacing Edge Impulse with MicroROS two custom message types were created:
+To ease the process of interfacing Edge Impulse with micro-ROS two custom message types were created:
 
 - `EIClassification`: Contains a label and value, like `{'label': 'cat', 'value': 0.75}`. One classification contains one class name and the probability given to that class by the neural network.
 - `EIResult`: Contains multiple classifications - as many as your neural network needs. A full result looks like this: `[{'label': 'cat', 'value': 0.75}, {'label': 'dog', 'value': 0.25}]`.
 
-In order to use these message types they need to be added to both your ROS2 and MicroROS environments. Clone the MicroROS + Edge Impulse repository [here](https://github.com/avielbr/micro_ros_ei) and copy the `ei_interfaces` directory. This folder contains everything you need to build the custom message types. 
+In order to use these message types they need to be added to both your ROS2 and micro-ROS environments. Clone the micro-ROS + Edge Impulse repository [here](https://github.com/avielbr/micro_ros_ei) and copy the `ei_interfaces` directory. This folder contains everything you need to build the custom message types. 
 
 
 
@@ -56,7 +56,7 @@ ros2 interface list | grep EI
 
 
 
-To add it to your MicroROS environment, navigate to the MicroROS Arduino library (that you cloned added to the Arduino IDE). You need to paste the same `ei_interfaces` directory inside the special `extra_packages` directory in the Arduino library. For me the path is:
+To add it to your MicroROS environment, navigate to the micro-ROS Arduino library (that you cloned added to the Arduino IDE). You need to paste the same `ei_interfaces` directory inside the special `extra_packages` directory in the Arduino library. For me the path is:
 
 ```
 ~/Arduino/libraries/micro_ros_arduino-2.0.5-humble/extras/library_generation/extra_packages
@@ -139,7 +139,7 @@ RCCHECK(rclc_publisher_init_default(
 	"/ei_micro_ros_publisher"));
 ```
 
-These names are what will appear on your ROS2 system once the MicroROS agent detects your MicroROS publisher.
+These names are what will appear on your ROS2 system once the microo-ROS agent detects your micro-ROS publisher.
 
 
 
@@ -168,7 +168,7 @@ publish_msg(); // Publish message
 
 #### MicroROS agent
 
-OK, now it's time to run the MicroROS agent and see if our node is publishing as expected. The agent runs on your main ROS2 computer and serves as a middle man to allow your MicroROS device to communicate with your main ROS2 system. It's recommended to use the docker command for the agent. When you run this command be sure and use paste in your board port - in my case the Portenta H7 connects to `/dev/ttyACM0`.
+OK, now it's time to run the MicroROS agent and see if our node is publishing as expected. The agent runs on your main ROS2 computer and serves as a middle man to allow your micro-ROS device to communicate with your main ROS2 system. It's recommended to use the docker command for the agent. When you run this command be sure and use paste in your board port - in my case the Portenta H7 connects to `/dev/ttyACM0`.
 
 ```
 docker run -it --rm -v /dev:/dev --privileged --net=host microros/micro-ros-agent:humble serial --dev [YOUR BOARD PORT] -v6

@@ -11,7 +11,7 @@
 #define EI_CAMERA_RAW_FRAME_BUFFER_COLS 320
 #define EI_CAMERA_RAW_FRAME_BUFFER_ROWS 240
 
-#define EI_TIMER                        200
+#define EI_TIMER                        10
 
 #define EI_CAMERA_FRAME_BUFFER_SDRAM
 

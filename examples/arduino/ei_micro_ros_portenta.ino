@@ -1,17 +1,46 @@
-/* Includes ---------------------------------------------------------------- */
+#include <micro_ros_arduino.h>
+
+#include <stdio.h>
+#include <rcl/rcl.h>
+#include <rcl/error_handling.h>
+#include <rclc/rclc.h>
+#include <rclc/executor.h>
+
+//#include <std_msgs/msg/int32.h>
+// Custom messages
+#include <ei_interfaces/msg/ei_result.h>
+#include <ei_interfaces/msg/ei_classification.h>
+
+rcl_publisher_t publisher;
+//std_msgs__msg__Int32 msg;
+// Initialize result msg
+ei_interfaces__msg__EIResult msg;
+
+rclc_executor_t executor;
+rclc_support_t support;
+rcl_allocator_t allocator;
+rcl_node_t node;
+rcl_timer_t timer;
+
+#define LED_PIN 13
+
+#define RCCHECK(fn) { rcl_ret_t temp_rc = fn; if((temp_rc != RCL_RET_OK)){error_loop();}}
+#define RCSOFTCHECK(fn) { rcl_ret_t temp_rc = fn; if((temp_rc != RCL_RET_OK)){}}
+
+///
+
 // Replace this with <name_of_ei_library_inferencing.h>
-#include <micro_ros_ei_inferencing.h>
+#include <dog_vs_cat_inferencing.h>
 
 #include "camera.h"
 #include "himax.h"
 #include "edge-impulse-sdk/dsp/image/image.hpp"
-#include "ei_result_publisher.h"
 
 /* Constant defines -------------------------------------------------------- */
 #define EI_CAMERA_RAW_FRAME_BUFFER_COLS 320
 #define EI_CAMERA_RAW_FRAME_BUFFER_ROWS 240
 
-#define EI_TIMER                        10
+#define EI_TIMER                        100
 
 #define EI_CAMERA_FRAME_BUFFER_SDRAM
 
@@ -20,6 +49,7 @@
 #endif
 
 #define ALIGN_PTR(p,a)   ((p & (a-1)) ?(((uintptr_t)p + a) & ~(uintptr_t)(a-1)) : p)
+
 
 /* Edge Impulse ------------------------------------------------------------- */
 
@@ -57,60 +87,9 @@ void ei_camera_deinit(void);
 bool ei_camera_capture(uint32_t img_width, uint32_t img_height, uint8_t *out_buf) ;
 int calculate_resize_dimensions(uint32_t out_width, uint32_t out_height, uint32_t *resize_col_sz, uint32_t *resize_row_sz, bool *do_resize);
 
-void setup()
-{
-#ifdef EI_CAMERA_FRAME_BUFFER_SDRAM
-    // Initialise the SDRAM
-    SDRAM.begin(SDRAM_START_ADDRESS);
-#endif
 
-    ei_camera_init();
+///
 
-    for (size_t ix = 0; ix < ei_dsp_blocks_size; ix++) {
-        ei_model_dsp_t block = ei_dsp_blocks[ix];
-        if (block.extract_fn == &extract_image_features) {
-            ei_dsp_config_image_t config = *((ei_dsp_config_image_t*)block.config);
-            int16_t channel_count = strcmp(config.channels, "Grayscale") == 0 ? 1 : 3;
-            if (channel_count == 3) {
-                break;
-            }
-        }
-    }
-
-    // Initialize MicroROS publishery
-    ei_micro_ros_setup(EI_TIMER, EI_CLASSIFIER_LABEL_COUNT);
-}
-
-/**
-* @brief      Get data and run inferencing
-*
-* @param[in]  debug  Get debug info if true
-*/
-void loop()
-{
-    if (ei_sleep(EI_TIMER) != EI_IMPULSE_OK) {
-        return;
-    }
-
-    ei::signal_t signal;
-    signal.total_length = EI_CLASSIFIER_INPUT_WIDTH * EI_CLASSIFIER_INPUT_HEIGHT;
-    signal.get_data = &ei_camera_cutout_get_data;
-
-    if (ei_camera_capture((size_t)EI_CLASSIFIER_INPUT_WIDTH, (size_t)EI_CLASSIFIER_INPUT_HEIGHT, NULL) == false) {
-        return;
-    }
-
-    // Run the classifier
-    ei_impulse_result_t result = { 0 };
-
-    EI_IMPULSE_ERROR err = run_classifier(&signal, &result, debug_nn);
-    if (err != EI_IMPULSE_OK) {
-        return;
-    }
-
-    fill_result_msg(result);
-    publish_msg();
-}
 
 /**
  * @brief   Setup image sensor & start streaming
@@ -332,3 +311,131 @@ int calculate_resize_dimensions(uint32_t out_width, uint32_t out_height, uint32_
 //#if !defined(EI_CLASSIFIER_SENSOR) || EI_CLASSIFIER_SENSOR != EI_CLASSIFIER_SENSOR_CAMERA
 //#error "Invalid model for current sensor"
 //#endif
+
+void error_loop(){
+  while(1){
+    digitalWrite(LED_PIN, !digitalRead(LED_PIN));
+    delay(100);
+  }
+}
+
+void timer_callback(rcl_timer_t * timer, int64_t last_call_time)
+{  
+  RCLC_UNUSED(last_call_time);
+  if (timer != NULL) {
+    
+    ei::signal_t signal;
+    signal.total_length = EI_CLASSIFIER_INPUT_WIDTH * EI_CLASSIFIER_INPUT_HEIGHT;
+    signal.get_data = &ei_camera_cutout_get_data;
+
+    if (ei_camera_capture((size_t)EI_CLASSIFIER_INPUT_WIDTH, (size_t)EI_CLASSIFIER_INPUT_HEIGHT, NULL) == false) {
+        return;
+    }
+
+    // Run the classifier
+    ei_impulse_result_t result = { 0 };
+    
+    EI_IMPULSE_ERROR err = run_classifier(&signal, &result, debug_nn);
+    if (err != EI_IMPULSE_OK) {
+        digitalWrite(LEDR, LOW);
+        delay(50);
+        digitalWrite(LEDR, HIGH);
+        return;
+    }
+
+    for (int32_t ix = 0; ix < EI_CLASSIFIER_LABEL_COUNT; ix++) {
+      strcpy(msg.result.data[ix].label.data, result.classification[ix].label);
+      msg.result.data[ix].value = result.classification[ix].value;
+    }
+
+//    RCSOFTCHECK(rcl_publish(&publisher, &msg, NULL));
+//    msg.data++;
+
+  digitalWrite(LEDB, LOW);
+  RCSOFTCHECK(rcl_publish(&publisher, &msg, NULL));
+  delay(10);
+  digitalWrite(LEDB, HIGH);
+  }
+}
+
+void setup() {
+  set_microros_transports();
+  
+  pinMode(LED_PIN, OUTPUT);
+  digitalWrite(LED_PIN, HIGH);  
+  
+//  delay(2000);
+
+  allocator = rcl_get_default_allocator();
+
+  //create init_options
+  RCCHECK(rclc_support_init(&support, 0, NULL, &allocator));
+
+  // create node
+  RCCHECK(rclc_node_init_default(&node, "micro_ros_arduino_node", "", &support));
+
+//  // create publisher
+//  RCCHECK(rclc_publisher_init_default(
+//    &publisher,
+//    &node,
+//    ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, Int32),
+//    "micro_ros_arduino_node_publisher"));
+
+  // Create publisher
+  RCCHECK(rclc_publisher_init_default(
+    &publisher,
+    &node,
+    ROSIDL_GET_MSG_TYPE_SUPPORT(ei_interfaces, msg, EIResult),
+    "/ei_ros_publisher"));
+
+  // create timer,
+  const unsigned int timer_timeout = 50;
+  RCCHECK(rclc_timer_init_default(
+    &timer,
+    &support,
+    RCL_MS_TO_NS(timer_timeout),
+    timer_callback));
+
+  // create executor
+  RCCHECK(rclc_executor_init(&executor, &support.context, 1, &allocator));
+  RCCHECK(rclc_executor_add_timer(&executor, &timer));
+
+//  msg.data = 0;
+
+
+  msg.result.capacity = EI_CLASSIFIER_LABEL_COUNT;
+  msg.result.data = (ei_interfaces__msg__EIClassification*) malloc(msg.result.capacity * sizeof(ei_interfaces__msg__EIClassification));
+  msg.result.size = 0;
+
+  // Allocate memory to message
+  for (int32_t ix = 0; ix < EI_CLASSIFIER_LABEL_COUNT; ix++) {
+    // If 20 characters isn't enough - increase this value
+    msg.result.data[ix].label.capacity = 20;
+    msg.result.data[ix].label.data = (char*) malloc(msg.result.data[ix].label.capacity * sizeof(char));
+    msg.result.data[ix].label.size = 0;
+    msg.result.size++;
+  }
+
+  #ifdef EI_CAMERA_FRAME_BUFFER_SDRAM
+      // Initialise the SDRAM
+      SDRAM.begin(SDRAM_START_ADDRESS);
+  #endif
+  
+      ei_camera_init();
+  
+      for (size_t ix = 0; ix < ei_dsp_blocks_size; ix++) {
+          ei_model_dsp_t block = ei_dsp_blocks[ix];
+          if (block.extract_fn == &extract_image_features) {
+              ei_dsp_config_image_t config = *((ei_dsp_config_image_t*)block.config);
+              int16_t channel_count = strcmp(config.channels, "Grayscale") == 0 ? 1 : 3;
+              if (channel_count == 3) {
+                  break;
+              }
+          }
+      }
+}
+
+void loop() {
+  //delay(100);
+  RCSOFTCHECK(rclc_executor_spin_some(&executor, RCL_MS_TO_NS(100)));
+}

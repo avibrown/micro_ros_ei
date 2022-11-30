@@ -56,13 +56,15 @@ ros2 interface list | grep EI
 
 
 
-To add it to your MicroROS environment, navigate to the micro-ROS Arduino library (that you cloned added to the Arduino IDE). You need to paste the same `ei_interfaces` directory inside the special `extra_packages` directory in the Arduino library. For me the path is:
+**To add it to your MicroROS environment,** navigate to the micro-ROS Arduino library (that you cloned added to the Arduino IDE). You need to paste the same `ei_interfaces` directory inside the special `extra_packages` directory in the Arduino library. For me the path is:
 
 ```
 ~/Arduino/libraries/micro_ros_arduino-2.0.5-humble/extras/library_generation/extra_packages
 ```
 
 Paste the directory there, **return to the main** `micro_ros_arduino-2.0.5-humble` **directory,** and use the docker commands from [this part](micro_ros_arduino-2.0.5-humble) of the MicroROS Arduino readme:
+
+> Note: You may need to make the `library_generation.sh` (in `/extras/library_generation`) able to run as an executable (right click and change permissions) in order for the library builder to work!
 
 ```
 docker pull microros/micro_ros_static_library_builder:humble

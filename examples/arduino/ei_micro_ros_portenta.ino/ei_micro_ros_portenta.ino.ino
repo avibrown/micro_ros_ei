@@ -30,7 +30,7 @@ rcl_timer_t timer;
 ///
 
 // Replace this with <name_of_ei_library_inferencing.h>
-#include <dog_vs_cat_inferencing.h>
+#include <dog_cat_inferencing.h>
 
 #include "camera.h"
 #include "himax.h"
@@ -359,6 +359,9 @@ void timer_callback(rcl_timer_t * timer, int64_t last_call_time)
 }
 
 void setup() {
+
+    digitalWrite(LED_PIN, !digitalRead(LED_PIN));
+    delay(100);
   set_microros_transports();
   
   pinMode(LED_PIN, OUTPUT);
@@ -373,13 +376,6 @@ void setup() {
 
   // create node
   RCCHECK(rclc_node_init_default(&node, "micro_ros_arduino_node", "", &support));
-
-//  // create publisher
-//  RCCHECK(rclc_publisher_init_default(
-//    &publisher,
-//    &node,
-//    ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, Int32),
-//    "micro_ros_arduino_node_publisher"));
 
   // Create publisher
   RCCHECK(rclc_publisher_init_default(
@@ -399,9 +395,6 @@ void setup() {
   // create executor
   RCCHECK(rclc_executor_init(&executor, &support.context, 1, &allocator));
   RCCHECK(rclc_executor_add_timer(&executor, &timer));
-
-//  msg.data = 0;
-
 
   msg.result.capacity = EI_CLASSIFIER_LABEL_COUNT;
   msg.result.data = (ei_interfaces__msg__EIClassification*) malloc(msg.result.capacity * sizeof(ei_interfaces__msg__EIClassification));
